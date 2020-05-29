@@ -1,8 +1,8 @@
 # CSRF - Cross-Site Request Forgery
 
-## Exemple
+## Exemple
 
-```shell
+```html
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
